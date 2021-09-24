@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function ImgMediaCard(props) {
     return (
-        <div style={{ p: 2, margin: '0 0 110px 0', maxWidth: 500 }}>
+        <div style={{ p: 2, margin: 'auto', maxWidth: 500 }}>
             <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
                 {props.title}
             </Typography>
