@@ -54,7 +54,7 @@ export default function BasicTabs() {
     <h1 style={{ textAlign: "center", fontSize: '20px', fontWeight: 700, color: '#112041' }}>Temukan event sesuai minatmu</h1>
     <Box sx={{ width: '100%' }}>
       <Box>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered indicatorColor="secondary">
           <Tab label="LOKET Recommendation" {...a11yProps(0)} />
           <Tab label="Workshop Online" {...a11yProps(1)} />
           <Tab label="Konser Online" {...a11yProps(2)} />

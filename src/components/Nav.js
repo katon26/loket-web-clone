@@ -14,6 +14,8 @@ import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Divider from '@mui/material/Divider';
+import { CardMedia } from '@mui/material';
+import Button from '@mui/material/Button';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -102,24 +104,25 @@ export default function PrimarySearchAppBar() {
       <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{ backgroundColor: '#152955' }}>
         <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block', color: 'white' } }}
-          >
-            Logo
-          </Typography>
-          <Search>
-            <SearchIconWrapper>
+          <CardMedia component="img" alt="logo" image="https://www.loket.com/images/logo-loket-white.png"
+          sx={{ maxHeight:"30px", maxWidth:"112px" }} />
+          <Search style={{ height: '35px' }}>
+            {/* <SearchIconWrapper>
               <SearchIcon />
-            </SearchIconWrapper>
+            </SearchIconWrapper> */}
             <StyledInputBase
               placeholder="Cari event ..."
               inputProps={{ 'aria-label': 'search' }}
             />
+            <Button variant="contained" endIcon={<SearchIcon />} style={{
+              borderRadius: '0px 3px 3px 0px',
+              bottom: '4px',
+              height: '35px',
+              background: '#2950a6',
+             }}>
+            </Button>
           </Search>
-          
+
           <Box sx={{ flexGrow: 1 }} />
           <nav>
             <Typography
